@@ -1,0 +1,62 @@
+﻿ @model List<Client>
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2 ">Client List</h2>
+            </div>
+        </div>
+    </div>
+    <div class=" card-body p-4">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-6">
+                </div>
+                <div class="col-6 text-end">
+                    <a asp-controller="Client" asp-action="Upsert" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i> Create New Client
+                    </a>
+                </div>
+            </div>
+            <table id="tblData" class="table table-bordered table-striped">
+                <thead>
+
+                    <tr>
+                        <th>
+                            Clients Name
+                        </th>
+                        <th>
+                            Mobile No.
+                        </th>
+                        <th>
+                            District
+                        </th>
+                        <th>
+                            Post
+                        </th>
+                        <th>
+                            Pin Code
+                        </th>
+                        <th>
+                            Land Mark
+                        </th>
+                        <th>
+                            Total Price
+                        </th>
+                        <th>
+                            Officer Name
+                        </th>
+                        
+                    </tr>
+
+                </thead>
+                
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/client.js"></script>
+}         
